@@ -14,6 +14,12 @@ function Header() {
                     <div className="font_righteous header_logo_venue">The venue</div>
                     <div className="header_logo_title">Musical Events</div>
                 </div>
+                <IconButton
+                    aria-label="Menu"
+                    color="inherit"
+                >
+                    <MenuIcon />
+                </IconButton>
             </Toolbar>
         </AppBar>
     )
