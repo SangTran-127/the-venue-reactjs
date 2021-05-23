@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {AppBar, Toolbar, IconButton} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
+import SlideDrawer from './SlideDrawer'
+import { logDOM } from '@testing-library/dom';
 function Header() {
-
+    const [drawerOpen, setDrawerOpen] = useState(false)
+    const toggleDrawer = (value) => {
+        setDrawerOpen(value)
+    }
     return (
         <AppBar position="fixed" style ={{
             backgroundColor: '#2f2f2f',
@@ -17,9 +22,14 @@ function Header() {
                 <IconButton
                     aria-label="Menu"
                     color="inherit"
+                    onClick={() => toggleDrawer(true)}
                 >
                     <MenuIcon />
                 </IconButton>
+                <SlideDrawer 
+                    open={drawerOpen}
+                    setOpen={()=> toggleDrawer(false)}
+                />
             </Toolbar>
         </AppBar>
     )
