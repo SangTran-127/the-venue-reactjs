@@ -28,7 +28,7 @@ function Header() {
                 </IconButton>
                 <SlideDrawer 
                     open={drawerOpen}
-                    setOpen={()=> toggleDrawer(false)}
+                    setOpen={(value)=> toggleDrawer(value)}
                 />
             </Toolbar>
         </AppBar>
