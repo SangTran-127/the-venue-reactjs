@@ -1,7 +1,7 @@
 import React from 'react';
 import { Drawer, List, ListItem} from '@material-ui/core'
 function SlideDrawer(props) {
-    const link = [
+    const links = [
         {where: 'featured',value: 'To top'},
         {where: 'venuenfo',value: 'Venue NFO'},
         {where: 'hightlights',value: 'Hightlights'},
@@ -9,7 +9,7 @@ function SlideDrawer(props) {
     ]
     const renderItem = (item) => {
         return (
-            <ListItem button onClick={()=>alert(item.where)} key={item.where}>
+            <ListItem button onClick={() => alert(item.where)} key={item.where}>
                     {item.value}
             </ListItem>
         )
@@ -21,7 +21,7 @@ function SlideDrawer(props) {
             onClose={() => props.setOpen(false)}
         >
             <List component="nav">
-                {link.map((item) => {remderItem(item)})}
+                { links.map((item) => renderItem(item)) }
             </List>
         </Drawer>
     )
