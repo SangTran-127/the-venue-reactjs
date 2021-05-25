@@ -1,6 +1,10 @@
 import React from 'react';
 import { Drawer, List, ListItem} from '@material-ui/core'
 function SlideDrawer(props) {
+    const link = {
+        where: '',
+        value: ''
+    }
     return(
         <Drawer
             anchor="right"
