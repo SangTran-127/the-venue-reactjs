@@ -6,6 +6,18 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div style = {{
+        background: "red",
+        height: "800px"
+      }}></div>
+      <div style = {{
+        background: "blue",
+        height: "800px"
+      }}></div>
+      <div style = {{
+        background: "green",
+        height: "800px"
+      }}></div>
     </div>
   );  
 }
