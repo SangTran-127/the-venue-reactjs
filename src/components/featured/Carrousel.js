@@ -20,9 +20,39 @@ function Carrousel() {
              }}
         >
             <Slider {...settings}>
-                <div>1</div> 
-                <div>2</div>
-                <div>3</div>
+                <div>
+                    <div
+                        className="carrousel_image"
+                        style={{
+                            background: `url(${slide_one})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                    >
+
+                    </div>
+                </div> 
+                <div>
+                    <div
+                        className="carrousel_image"
+                        style={{
+                            background: `url(${slide_two})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                    >
+
+                    </div>
+                </div>
+                <div>
+                    <div
+                        className="carrousel_image"
+                        style={{
+                            background: `url(${slide_three})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                    >
+
+                    </div>
+                </div>
             </Slider>
         </div>
     )
