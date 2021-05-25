@@ -1,11 +1,12 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 function Footer() {
     return(
         <footer className = "bck_red">
-            <div>
+            <Fade>
                 <div className="font_righteous footer_logo_venue">The venue</div>
                 <div className="footer_copyright">sang_tqs 2021 all rights reserved</div>
-            </div>
+            </Fade>
         </footer>
     )
 }
