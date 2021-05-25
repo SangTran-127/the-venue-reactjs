@@ -7,6 +7,13 @@ function SlideDrawer(props) {
         {where: 'hightlights',value: 'Hightlights'},
         {where: 'location',value: 'Location'}
     ]
+    const renderItem = (item) => {
+        return (
+            <ListItem button onClick={()=>alert(item.where)} key={item.where}>
+                    {item.value}
+            </ListItem>
+        )
+    }
     return(
         <Drawer
             anchor="right"
@@ -14,15 +21,7 @@ function SlideDrawer(props) {
             onClose={() => props.setOpen(false)}
         >
             <List component="nav">
-                <ListItem button onClick={()=>alert('clicked')}>
-                    con cặc 1
-                </ListItem>
-                <ListItem button onClick={()=>alert('clicked')}>
-                    con cặc 2
-                </ListItem>
-                <ListItem button onClick={()=>alert('clicked')}>
-                    con cặc 3
-                </ListItem>
+                {link.map((item) => {remderItem(item)})}
             </List>
         </Drawer>
     )
