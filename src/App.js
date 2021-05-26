@@ -4,6 +4,7 @@ import Header from './components/header_footer/Header'
 import Footer from './components/header_footer/Footer'
 import Featured from './components/featured'
 import VenueNFO from './components/venueNFO'
+import HighLights from './components/highlights'
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,9 @@ function App() {
       </>   
       <>
         <VenueNFO />
+      </>
+      <>
+        <HighLights/>
       </>
       <div style = {{
         background: "red",

@@ -9,4 +9,4 @@ function Highlights() {
         </div>
     )
 }
-export default Highlight
+export default Highlights
