@@ -3,6 +3,7 @@ import './resources/style.css'
 import Header from './components/header_footer/Header'
 import Footer from './components/header_footer/Footer'
 import Featured from './components/featured'
+import VenueNFO from './components/venueNFO'
 function App() {
   return (
     <div className="App">
@@ -10,6 +11,9 @@ function App() {
       <>
         <Featured />
       </>   
+      <>
+        <VenueNFO />
+      </>
       <div style = {{
         background: "red",
         height: "800px"
