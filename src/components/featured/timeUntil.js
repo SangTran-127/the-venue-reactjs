@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import React, {useEffect, useState, useCallback} from 'react'
 import {Slide} from 'react-awesome-reveal'
 function TimeUntil() {
@@ -16,7 +15,7 @@ function TimeUntil() {
             </div>
         )
     }
-    const getTimeDeadline = (deadline) => {
+    const getTimeDeadline = useCallback( (deadline) => {
         const time = Date.parse(deadline) - Date.parse(new Date())
         if (time < 0) {
             console.log('day passed');
@@ -31,9 +30,8 @@ function TimeUntil() {
                 minutes,
                 seconds
             })
-
         }
-    }
+    }, [])
     useEffect( () => {
         setInterval( ()=> getTimeDeadline('Jul, 12, 2021, 00:00:00'), 1000 )
     }, [getTimeDeadline] )
