@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import {AppBar, Toolbar, IconButton} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import SlideDrawer from './SlideDrawer'
-import { logDOM } from '@testing-library/dom';
 function Header() {
     const [drawerOpen, setDrawerOpen] = useState(false)
     const [headerShow, setHeaderShow] = useState(false)
