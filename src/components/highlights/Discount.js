@@ -21,7 +21,7 @@ function Discount() {
             <div className="discount_wrapper">
                 <Fade 
                     onVisibilityChange={(inView)=>{
-                        console.log(inView)
+
                         if (inView) {
                             percentage()
                         }
