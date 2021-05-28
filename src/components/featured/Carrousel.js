@@ -50,7 +50,7 @@ function Carrousel() {
                             height:`${window.innerHeight}px`
                         }}
                     >
-                    <div></div>
+                   
                     </div>
                 </div>
             </Slider>
