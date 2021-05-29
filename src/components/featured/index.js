@@ -7,7 +7,7 @@ function Featured() {
             <Carrousel />
             <div className="artist_name">
                 <div className="wrapper">
-                    Arina Grande
+                    Sáng đẹp chai
                 </div>
             </div>
             <TimeUntil />

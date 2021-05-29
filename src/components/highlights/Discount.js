@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Fade, Slide} from 'react-awesome-reveal'
+import MyButton from '../../components/utils/MyButton'
 function Discount() {
     const countEnd = 30
     const [start, setStart] = useState(0)
@@ -37,9 +38,10 @@ function Discount() {
                         <h3>Purchase this fucking ticket before July 12</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
+                    <MyButton/>
                 </Slide>
             </div>
         </div>
     )
-}
+}   
 export default Discount
