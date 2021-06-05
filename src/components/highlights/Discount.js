@@ -37,7 +37,9 @@ function Discount() {
                     <div className="discount_description">
                         <h3>Purchase this fucking ticket before July 12</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <MyButton/>
+                        <MyButton
+                            text="Purchase tickets"
+                        />
                     </div>
                 </Slide>
             </div>

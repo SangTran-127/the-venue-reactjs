@@ -1,12 +1,11 @@
 import React from 'react'
 import Button from '@material-ui/core'
 import TicketIcon from '../../resources/images/icons/ticket.png'
-function MyButton() {
+function MyButton(props) {
     return (
-        <div>
-            <p>hello</p>
-            
-        </div>
+        <Button>
+            {props.text}
+        </Button>
 
         )
 }
