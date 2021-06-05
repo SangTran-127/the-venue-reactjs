@@ -5,6 +5,7 @@ import Footer from './components/header_footer/Footer'
 import Featured from './components/featured'
 import VenueNFO from './components/venueNFO'
 import HighLights from './components/highlights'
+import Pricing from './components/pricing'
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,9 @@ function App() {
       </>
       <>
         <HighLights/>
+      </>
+      <>
+        <Pricing/>
       </>
       <div style = {{
         background: "red",
