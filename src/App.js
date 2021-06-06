@@ -6,6 +6,7 @@ import Featured from './components/featured'
 import VenueNFO from './components/venueNFO'
 import HighLights from './components/highlights'
 import Pricing from './components/pricing'
+import Location from './components/location'
 function App() {
   return (
     <div className="App">
